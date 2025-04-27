@@ -1,0 +1,12 @@
+*.bak
+*.csv
+.venv
+venv
+.DS_Store
+.idea
+*.zip
+template.csv
+!template.csv.zip
+*.log
+*.dump
+venv/

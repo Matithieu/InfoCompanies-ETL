@@ -1,0 +1,8 @@
+black
+chardet
+isort
+numpy
+pandas
+psycopg2-binary
+requests
+setuptools
