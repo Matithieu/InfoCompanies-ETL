@@ -121,8 +121,8 @@ class StockUniteLegaleETL:
 
 
 if __name__ == "__main__":
-    input_file = "./ETL/data/input/effectif/stock_unite_legale.csv"
-    output_file = "./ETL/data/output/extract/stock_unite_legale.csv"
+    input_file = "./src/data/input/effectif/stock_unite_legale.csv"
+    output_file = "./src/data/output/extract/stock_unite_legale.csv"
 
     etl_pipeline = StockUniteLegaleETL(
         input_file=input_file, output_file=output_file, chunk_size=300_000

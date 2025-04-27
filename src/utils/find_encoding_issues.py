@@ -2,7 +2,7 @@ import csv
 import os
 
 # Dossier contenant les fichiers CSV
-input_dir = "./ETL/data/input"
+input_dir = "./src/data/input"
 log_file = "./logs/encoding_issues.log"
 
 

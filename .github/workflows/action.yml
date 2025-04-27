@@ -24,11 +24,11 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r requirements-dev.in
 
       # Rework happend only in ETL folder
       - name: Run black
-        run: black --check ./ETL
+        run: black --check ./src
 
       - name: Run isort
-        run: isort --check-only ./ETL
+        run: isort --check-only ./src

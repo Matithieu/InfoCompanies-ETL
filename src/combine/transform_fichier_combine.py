@@ -182,8 +182,8 @@ class RenameAndAddColumnsETL:
 
 
 if __name__ == "__main__":
-    input_file = "./ETL/data/output/combine/fichier_combine.csv"
-    output_file = "./ETL/data/output/transform/fichier_combine.csv"
+    input_file = "./src/data/output/combine/fichier_combine.csv"
+    output_file = "./src/data/output/transform/fichier_combine.csv"
 
     etl_pipeline = RenameAndAddColumnsETL(input_file, output_file)
     etl_pipeline.run()

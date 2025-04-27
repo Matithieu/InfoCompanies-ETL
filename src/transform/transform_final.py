@@ -133,8 +133,8 @@ def clean_city_name(value: str) -> str:
 
 
 if __name__ == "__main__":
-    input_file = "./ETL/data/output/combine/fichier_effectif_and_combine.csv"
-    output_file = "./ETL/data/output/final.csv"
+    input_file = "./src/data/output/combine/fichier_effectif_and_combine.csv"
+    output_file = "./src/data/output/final.csv"
 
     # Define the cleaning rules for various columns
     cleaning_rules = {

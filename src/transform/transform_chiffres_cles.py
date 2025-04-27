@@ -60,8 +60,8 @@ def clean_chiffres_cles(input_file: str, output_file: str):
 
 if __name__ == "__main__":
     # Define input and output files
-    input_file = "./ETL/data/output/extract/chiffres_cles.csv"
-    output_file = "./ETL/data/output/transform/chiffres_cles.csv"
+    input_file = "./src/data/output/extract/chiffres_cles.csv"
+    output_file = "./src/data/output/transform/chiffres_cles.csv"
 
     # Run the cleaning process
     clean_chiffres_cles(input_file, output_file)

@@ -135,9 +135,9 @@ class FinalSortETL:
 
 
 if __name__ == "__main__":
-    template_file = "./ETL/data/output/transform/fichier_combine.csv"
-    effectif_file = "./ETL/data/output/extract/stock_unite_legale.csv"
-    output_file = "./ETL/data/output/combine/fichier_effectif_and_combine.csv"
+    template_file = "./src/data/output/transform/fichier_combine.csv"
+    effectif_file = "./src/data/output/extract/stock_unite_legale.csv"
+    output_file = "./src/data/output/combine/fichier_effectif_and_combine.csv"
 
     etl_pipeline = FinalSortETL(
         template_file, effectif_file, output_file, chunk_size=100_000

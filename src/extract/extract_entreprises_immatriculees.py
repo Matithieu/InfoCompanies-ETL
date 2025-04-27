@@ -4,10 +4,10 @@ import os
 import pandas as pd
 
 
-# Link: https://opendata.datainfogreffe.fr/explore/?sort=modified&refine.theme=Radiations
-class EntreprisesRadieesETL:
+# Link: https://opendata.datainfogreffe.fr/explore/?sort=modified&refine.theme=Immatriculations
+class EntreprisesImmatriculeesETL:
     """
-    A class to perform the ETL process for 'entreprises radiées' CSV files.
+    A class to perform the ETL process for "entreprises immatriculees" CSV files.
     It loads files matching a pattern, selects specified columns, concatenates the data,
     and saves the final output to a CSV file.
     """
@@ -24,7 +24,7 @@ class EntreprisesRadieesETL:
         Initialize the ETL instance.
 
         :param input_dir: Directory where the input CSV files are stored.
-        :param file_pattern: Pattern to match the CSV files (e.g., "societes-radiees-*.csv").
+        :param file_pattern: Pattern to match the CSV files (e.g., "entreprises-immatriculees-en-*.csv").
         :param columns_to_keep: List of columns to extract from the CSV files.
         :param output_dir: Directory where the output CSV file will be saved.
         :param output_filename: Name of the output CSV file.
@@ -63,7 +63,7 @@ class EntreprisesRadieesETL:
         :return: The combined DataFrame.
         """
         if not self.frames:
-            print("No DataFrames loaded, returning an empty DataFrame.")
+            print("No data frames loaded, returning an empty DataFrame.")
             return pd.DataFrame()
         return pd.concat(self.frames, ignore_index=True)
 
@@ -77,14 +77,14 @@ class EntreprisesRadieesETL:
             os.makedirs(self.output_dir)
         output_path = os.path.join(self.output_dir, self.output_filename)
         df.to_csv(output_path, sep=";", index=False)
-        print(f"Final file successfully saved as: {output_path}")
+        print(f"Combined CSV file saved as: {output_path}")
 
 
 if __name__ == "__main__":
     # Configuration parameters
 
-    input_directory = "./ETL/data/input/entreprises_radiees"
-    file_pattern = "entreprises-radiees-*.csv"
+    input_directory = "./src/data/input/entreprises_immatriculees"
+    file_pattern = "entreprises-immatriculees-en-*.csv"
 
     # Define the columns to keep from the CSV files
     columns_to_keep = [
@@ -103,11 +103,11 @@ if __name__ == "__main__":
         "Date radiation",
     ]
 
-    output_directory = "./ETL/data/output/extract"
-    output_file = "entreprises_radiees.csv"
+    output_directory = "./src/data/output/extract"
+    output_file = "entreprises_immatriculees.csv"
 
     # Instantiate and run the ETL process
-    etl = EntreprisesRadieesETL(
+    etl = EntreprisesImmatriculeesETL(
         input_dir=input_directory,
         file_pattern=file_pattern,
         columns_to_keep=columns_to_keep,

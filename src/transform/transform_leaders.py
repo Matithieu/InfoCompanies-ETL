@@ -43,8 +43,8 @@ class LeadersRenameTransformation:
 
 
 if __name__ == "__main__":
-    input_file = "./ETL/data/input/extract/leaders.csv"
-    output_file = "./ETL/data/output/transform/leaders.csv"
+    input_file = "./src/data/input/extract/leaders.csv"
+    output_file = "./src/data/output/transform/leaders.csv"
 
     # Translation dictionary for renaming the headers
     translation_dict = {
