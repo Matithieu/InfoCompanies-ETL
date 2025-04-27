@@ -54,8 +54,8 @@ def clean_entreprises_immatriculees(input_file: str, output_file: str):
 
 if __name__ == "__main__":
     # Définir les chemins d'entrée et de sortie
-    input_file = "./ETL/data/output/extract/entreprises_immatriculees.csv"
-    output_file = "./ETL/data/output/transform/entreprises_immatriculees.csv"
+    input_file = "./src/data/output/extract/entreprises_immatriculees.csv"
+    output_file = "./src/data/output/transform/entreprises_immatriculees.csv"
 
     # Exécuter le processus de nettoyage
     clean_entreprises_immatriculees(input_file, output_file)

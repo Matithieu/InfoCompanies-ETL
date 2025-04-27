@@ -91,11 +91,11 @@ class CombineFilesETL:
 
 if __name__ == "__main__":
     input_files = [
-        "./ETL/data/output/transform/chiffres_cles.csv",
-        "./ETL/data/output/transform/entreprises_immatriculees.csv",
-        "./ETL/data/output/transform/entreprises_radiees.csv",
+        "./src/data/output/transform/chiffres_cles.csv",
+        "./src/data/output/transform/entreprises_immatriculees.csv",
+        "./src/data/output/transform/entreprises_radiees.csv",
     ]
-    output_file = "./ETL/data/output/combine/fichier_combine.csv"
+    output_file = "./src/data/output/combine/fichier_combine.csv"
 
     etl_pipeline = CombineFilesETL(input_files, output_file)
     etl_pipeline.run()

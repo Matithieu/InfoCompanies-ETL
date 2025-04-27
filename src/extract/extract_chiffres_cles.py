@@ -118,12 +118,12 @@ class ChiffresClesETL:
 if __name__ == "__main__":
     # Configuration parameters
 
-    input_directory = "./ETL/data/input/chiffres_cles"
+    input_directory = "./src/data/input/chiffres_cles"
     file_prefix = "chiffres-cles-"
     years = ["2020", "2021", "2022", "2023"]
     # years = ["2022", "2023"]
 
-    output_directory = "./ETL/data/output/extract"
+    output_directory = "./src/data/output/extract"
     output_file = "chiffres_cles.csv"
 
     columns_to_keep = [

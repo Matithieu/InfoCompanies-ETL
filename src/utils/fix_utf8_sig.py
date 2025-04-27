@@ -2,8 +2,8 @@ import codecs
 import os
 
 # Répertoires
-input_dir = "./ETL/data/input"
-backup_dir = "./ETL/data/backup"
+input_dir = "./src/data/input"
+backup_dir = "./src/data/backup"
 
 # Créer le dossier de backup s'il n'existe pas
 os.makedirs(backup_dir, exist_ok=True)

@@ -14,41 +14,41 @@ NC='\033[0m'  # No Color
 
 # Updated list of ETL scripts (relative paths)
 scripts=(
-    "ETL/extract/extract_chiffres_cles.py"
-    "ETL/extract/extract_effectif.py"
-    "ETL/extract/extract_entreprises_immatriculees.py"
-    "ETL/extract/extract_entreprises_radiees.py"
-    # "ETL/extract/extract_leaders.py"
+    "src/extract/extract_chiffres_cles.py"
+    "src/extract/extract_effectif.py"
+    "src/extract/extract_entreprises_immatriculees.py"
+    "src/extract/extract_entreprises_radiees.py"
+    # "src/extract/extract_leaders.py"
     #
-    "ETL/transform/transform_chiffres_cles.py"
-    "ETL/transform/transform_entreprises_immatriculees.py"
-    "ETL/transform/transform_entreprises_radiees.py"
-    # "ETL/transform/transform_leaders.py"
+    "src/transform/transform_chiffres_cles.py"
+    "src/transform/transform_entreprises_immatriculees.py"
+    "src/transform/transform_entreprises_radiees.py"
+    # "src/transform/transform_leaders.py"
     #
-    "ETL/combine/combine_fichier_combine.py"
-    "ETL/combine/transform_fichier_combine.py"
-    "ETL/combine/combine_effectif_to_fichier_combine.py"
+    "src/combine/combine_fichier_combine.py"
+    "src/combine/transform_fichier_combine.py"
+    "src/combine/combine_effectif_to_fichier_combine.py"
     #
-    "ETL/transform/transform_final.py"
+    "src/transform/transform_final.py"
 )
 
 # List of intermediate CSV files to delete (update as needed)
 csv_files_to_delete=(
-    "./ETL/data/output/extract/chiffres_cles.csv"
-    "./ETL/data/output/extract/entreprises_immatriculees.csv"
-    "./ETL/data/output/extract/entreprises_radiees.csv"
-    "./ETL/data/output/extract/leaders.csv"
-    "./ETL/data/output/extract/stock_unite_legale.csv"
+    "./src/data/output/extract/chiffres_cles.csv"
+    "./src/data/output/extract/entreprises_immatriculees.csv"
+    "./src/data/output/extract/entreprises_radiees.csv"
+    "./src/data/output/extract/leaders.csv"
+    "./src/data/output/extract/stock_unite_legale.csv"
     #
-    "./ETL/data/output/transform/chiffres_cles.csv"
-    "./ETL/data/output/transform/entreprises_immatriculees.csv"
-    "./ETL/data/output/transform/entreprises_radiees.csv"
-    # "./ETL/data/output/transform/leaders.csv"
-    "./ETL/data/output/transform/fichier_combine.csv"
+    "./src/data/output/transform/chiffres_cles.csv"
+    "./src/data/output/transform/entreprises_immatriculees.csv"
+    "./src/data/output/transform/entreprises_radiees.csv"
+    # "./src/data/output/transform/leaders.csv"
+    "./src/data/output/transform/fichier_combine.csv"
     #
-    "./ETL/data/output/combine/fichier_combine.csv"
-    "./ETL/data/output/combine/fichier_effectif_and_combine.csv"
-    "./ETL/data/output/effectif/fichier_effectif.csv"
+    "./src/data/output/combine/fichier_combine.csv"
+    "./src/data/output/combine/fichier_effectif_and_combine.csv"
+    "./src/data/output/effectif/fichier_effectif.csv"
 )
 
 # Function to run ETL scripts

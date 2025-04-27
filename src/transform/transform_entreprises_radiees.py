@@ -57,8 +57,8 @@ def clean_entreprises_radiees(input_file: str, output_file: str):
 
 if __name__ == "__main__":
     # Define the input and output file paths
-    input_file = "./ETL/data/output/extract/entreprises_radiees.csv"
-    output_file = "./ETL/data/output/transform/entreprises_radiees.csv"
+    input_file = "./src/data/output/extract/entreprises_radiees.csv"
+    output_file = "./src/data/output/transform/entreprises_radiees.csv"
 
     # Run the cleaning process
     clean_entreprises_radiees(input_file, output_file)

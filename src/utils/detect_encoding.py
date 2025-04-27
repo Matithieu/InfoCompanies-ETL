@@ -3,7 +3,7 @@ import os
 import chardet
 
 # Dossier des fichiers CSV
-input_dir = "./ETL/data/input"
+input_dir = "./src/data/input"
 
 # Récupération récursive des fichiers CSV
 csv_files = []

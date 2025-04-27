@@ -3,7 +3,7 @@ import glob
 import pandas as pd
 
 # Chemin du dossier contenant les CSV
-folder_path = "./ETL/data/output/transform/"
+folder_path = "./src/data/output/transform/"
 
 # Liste de tous les fichiers CSV dans le dossier
 csv_files = glob.glob(folder_path + "*.csv")

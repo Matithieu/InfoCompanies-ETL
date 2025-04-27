@@ -84,8 +84,8 @@ class LeadersETL:
 
 
 if __name__ == "__main__":
-    input_file = "./ETL/data/input/leaders/leaders.csv"
-    output_file = "./ETL/data/output/extract/leaders.csv"
+    input_file = "./src/data/input/leaders/leaders.csv"
+    output_file = "./src/data/output/extract/leaders.csv"
 
     # Columns to keep from the input file
     columns_to_keep = [
