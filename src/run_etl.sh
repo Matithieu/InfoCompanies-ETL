@@ -86,6 +86,17 @@ run_scripts() {
     done
 }
 
+# Gzip the final CSV file
+compression() {
+    echo -e "${YELLOW}Compressing final CSV file...${NC}"
+    gzip ./src/data/output/final.csv
+    if [ $? -eq 0 ]; then
+        echo -e "${GREEN}Final CSV file compressed successfully.${NC}"
+    else
+        echo -e "${RED}Error compressing final CSV file.${NC}"
+    fi
+}
+
 # Function to delete intermediate CSV files
 delete_csv_files() {
     echo -e "${YELLOW}Deleting intermediate CSV files...${NC}"
@@ -110,6 +121,8 @@ main() {
     
     run_scripts
     echo -e "${GREEN}All ETL scripts executed.${NC}"
+
+    compression
     
     delete_csv_files
     
